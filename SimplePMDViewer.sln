@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePMDViewer", "SimplePMDViewer\SimplePMDViewer\SimplePMDViewer.csproj", "{9D56D245-286E-41F5-8BD8-75839344F0C8}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SimplePMDViewerContent", "SimplePMDViewer\SimplePMDViewerContent\SimplePMDViewerContent.contentproj", "{0B8F0E01-6FBB-4CDA-BF62-6A110E322812}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D56D245-286E-41F5-8BD8-75839344F0C8}.Debug|x86.ActiveCfg = Debug|x86
+		{9D56D245-286E-41F5-8BD8-75839344F0C8}.Debug|x86.Build.0 = Debug|x86
+		{9D56D245-286E-41F5-8BD8-75839344F0C8}.Release|x86.ActiveCfg = Release|x86
+		{9D56D245-286E-41F5-8BD8-75839344F0C8}.Release|x86.Build.0 = Release|x86
+		{0B8F0E01-6FBB-4CDA-BF62-6A110E322812}.Debug|x86.ActiveCfg = Debug|x86
+		{0B8F0E01-6FBB-4CDA-BF62-6A110E322812}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
