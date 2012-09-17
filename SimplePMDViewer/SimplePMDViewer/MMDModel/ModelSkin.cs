@@ -7,7 +7,7 @@ using System.IO;
 using WORD = System.UInt16;
 using DWORD = System.UInt32;
 
-namespace SimpleMMDImporter.MMDModel
+namespace SimplePMDViewer.MMDModel
 {
     class ModelSkinVertexData
     {

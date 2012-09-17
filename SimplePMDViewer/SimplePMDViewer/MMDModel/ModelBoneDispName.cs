@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 
 
-namespace SimpleMMDImporter.MMDModel
+namespace SimplePMDViewer.MMDModel
 {
     class ModelBoneDispName
     {

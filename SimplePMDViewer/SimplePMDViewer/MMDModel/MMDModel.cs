@@ -6,7 +6,7 @@ using System.IO;
 using WORD = System.UInt16;
 using DWORD = System.UInt32;
 
-namespace SimpleMMDImporter.MMDModel
+namespace SimplePMDViewer.MMDModel
 {
     /// <summary>
     /// MMDモデル(ver.1)
@@ -29,14 +29,13 @@ namespace SimpleMMDImporter.MMDModel
         public bool ToonExpantion { get; set; }
         public List<string> ToonFileNames { get; private set; }
         const int NumToonFileName = 10;
-
         public bool PhysicsExpantion { get; set; }
         public ModelRigidBody[] RigidBodies { get; set; }
         public ModelJoint[] Joints { get; set; }
         public CoordinateType Coordinate { get; private set; }
         float CoordZ { get { return (float)Coordinate; } }
 
-        public MMDModel(string inputPath, string outputPath, float scale)
+        public MMDModel(string inputPath, float scale)
         {
             Vertexes = null;
             EnglishExpantion = ToonExpantion = PhysicsExpantion = false;
@@ -63,15 +62,6 @@ namespace SimpleMMDImporter.MMDModel
                 }
                 fs.Close();
             }
-
-            using (var fs = new FileStream(outputPath, FileMode.Create))
-            {
-                var writer = new StreamWriter(fs);
-                writer.WriteLine(Magic + "," + Version);
-                Write(writer);
-                writer.Close();
-            }
-
         }
         public void Read(BinaryReader reader, CoordinateType coordinate, float scale)
         {
